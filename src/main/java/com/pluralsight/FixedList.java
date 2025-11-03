@@ -13,10 +13,10 @@ public class FixedList <T> {
 
     public void add(T item) throws Exception {
 
-        if (items.size() > maxSize) {
+        if (items.size() >= maxSize) {
             throw new Exception("Max items exceeded");
         } else {
-            items.add((T) item);
+            items.add(item);
         }
     }
 
